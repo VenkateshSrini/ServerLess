@@ -1,0 +1,6 @@
+{
+  "ID": null,
+  "Name": null,
+  "Price": 0.0,
+  "Category": null
+}

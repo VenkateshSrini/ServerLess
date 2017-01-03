@@ -1,0 +1,27 @@
+﻿{
+  "bindings": [
+    {
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get"
+      ],
+      "authLevel": "function",
+      "route": "products"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "table",
+      "name": "inTable",
+      "tableName": "Product",
+      "connection": "FaaSStorageAccount",
+      "direction": "in"
+    }
+  ],
+  "disabled": false
+}

@@ -1,0 +1,10 @@
+{
+  "ID": null,
+  "State": null,
+  "Description": null,
+  "Products": null,
+  "StartDate": "0001-01-01T00:00:00",
+  "EndDate": "0001-01-01T00:00:00",
+  "BasePrice": 0.0,
+  "FinalPrice": 0.0
+}

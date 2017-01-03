@@ -1,0 +1,34 @@
+﻿{
+  "bindings": [
+    {
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "post"
+      ],
+      "authLevel": "function",
+      "route": "bidOffer"
+    },
+    {
+      "type": "table",
+      "name": "inProduct",
+      "tableName": "Product",
+      "connection": "FaaSStorageAccount",
+      "direction": "in"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "table",
+      "name": "outTable",
+      "tableName": "BidOffer",
+      "connection": "FaaSStorageAccount",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}

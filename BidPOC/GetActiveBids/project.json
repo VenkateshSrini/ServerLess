@@ -1,0 +1,9 @@
+﻿{
+  "frameworks": {
+    "net46":{
+      "dependencies": {
+        "AutoMapper": "5.0.2"
+      }
+    }
+  }
+}
