@@ -1,0 +1,19 @@
+﻿{
+  "disabled": false,
+  "bindings": [
+    {
+      "name": "myQueueItem",
+      "type": "queueTrigger",
+      "direction": "in",
+      "queueName": "bidsqueue",
+      "connection": "FaaSStorageAccount"
+    },
+    {
+      "type": "sendGrid",
+      "name": "mailMessage",
+      "direction": "out",
+      "from": "venkateshKings@leadBidders.com",
+      "subject": "Bid Win Announcement"
+    }
+  ]
+}

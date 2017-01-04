@@ -1,0 +1,47 @@
+﻿{
+  "disabled": false,
+  "bindings": [
+    {
+      "name": "myTimer",
+      "type": "timerTrigger",
+      "direction": "in",
+      "schedule": "0 0/3 * * * *"
+    },
+    {
+      "type": "table",
+      "name": "inBidOffers",
+      "tableName": "BidOffer",
+      "connection": "FaaSStorageAccount",
+      "direction": "in"
+    },
+    {
+      "type": "table",
+      "name": "inBids",
+      "tableName": "Bids",
+      "connection": "FaaSStorageAccount",
+      "direction": "in"
+    },
+    {
+      "type": "table",
+      "name": "outBidOffers",
+      "tableName": "BidOffer",
+      "connection": "FaaSStorageAccount",
+      "direction": "out"
+    },
+    {
+      "type": "table",
+      "name": "outBidLogs",
+      "tableName": "BidLogs",
+      "connection": "FaaSStorageAccount",
+      "direction": "out"
+    },
+    {
+      "name": "outBidsQueue",
+      "queueName": "bidsqueue",
+      "connection": "FaaSStorageAccount",
+      "type": "queue",
+      "direction": "out"
+    }
+
+  ]
+}
